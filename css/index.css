@@ -3,7 +3,7 @@
 }
 
 body {
-    width: 88.5em;
+    width: 98.5vw;
 
 }
 
@@ -12,16 +12,99 @@ body {
 
 }
 
+div.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.19em;
+}
+
 header {
-    background-color: transparent;
+    width: 100%;
+    background: transparent;
+    height: 0.5em;
+}
+
+img.logo {
+    display: inline-block;
+    position: absolute;
+    float: right;
+    top: 3.2em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    writing-mode: vertical-rl;
+    padding-top: 33em;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    padding-top: 8em;
+    color: #ff0200;
+    padding-left: 102em;
+    margin-bottom: -5em;
+    position: sticky;
+    font-family: 'Impact';
+}
+
+a:hover {
+    text-shadow: 3px white;
 }
 
 section.one {
     max-width: 100%;
     height: 100vh;
-    background-color: gray;
-    background: url ('images/img1_bg.jpg');
+    /* background: url(../img1_bg.jpg); */
+
+    background: url(../img1_bg.jpg);
+    background-attachment: fixed;
     background-size: cover;
+    background-color: red;
+}
 
+img.stamp {
+    display: block;
+    width: 70em;
+    padding-top: 5.5em
+}
 
+section.two {
+    max-width: 100%;
+    height: 100vh;
+    background: url(../img2_bg.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: red;
+    border-left: 13em solid white;
+    border-top: 6.5em solid white;
+    border-bottom: 3.25em solid white;
+    /* border-right: 0.5em solid red; */
+    margin-left: 4em;
+}
+
+div.framer {
+    width: 75%;
+    height: 47.93em;
+    position: absolute;
+    top: 0.1em;
+    border-top: 4px solid red;
+    border-left: 4px solid red;
+    border-bottom: 4px solid red;
+    margin-top: 64.5em;
+}
+
+section.three {
+    max-width: 100%;
+    height: 100vh;
+    background: url(../img3_bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: red;
 }
