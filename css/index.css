@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    font-family: campaign, sans-serif;
+    font-style: normal;
+    font-weight: 200;
 }
 
 body {
@@ -53,11 +56,14 @@ a {
     text-decoration: none;
     padding-top: 9em;
     color: #ff0200;
-    padding-left: 86em;
+    padding-left: 102.75em;
     margin-bottom: -5em;
     margin-top: 4em;
-    font-family: 'Impact';
-    font-size: 1em;
+    font-family: "Campaign";
+    font-weight: 600;
+    font-size: 0.85em;
+    font-style: oblique;
+    text-transform: capitalize;
 }
 
 section.one {
@@ -82,7 +88,7 @@ section.two {
     background: url(../img2_bg.jpg);
     background-color: white;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     border-left: 13em solid white;
     border-top: 6.5em solid white;
@@ -92,10 +98,13 @@ section.two {
 }
 
 div.bottomStack {
-    width: 3.2em;
-    height: 2.1em;
-    background-color: gray;
-    z-index: -1;
+    position: absolute;
+    left: 3em;
+    margin-top: 2em;
+    width: 27.2em;
+    height: 34.1em;
+    background-color: red;
+    z-index: 0;
 }
 
 div.interiorImage {
@@ -104,11 +113,44 @@ div.interiorImage {
     background: url(../img6.jpg)
 }
 
+h2 {
+    float: right;
+    background: whitesmoke;
+    color: red;
+    font-size: 3em;
+    font-family: "Campaign";
+    font-weight: 200;
+    padding-right: 0.3em;
+    margin-top: 0.53em;
+}
+
 section.three {
+    max-width: 100%;
+    height: 100vh;
+    background: url(../img4_bg.jpg);
+    background-attachment: fixed;
+    background-repeat: space;
+    background-position: cover;
+    background-color: white;
+    backdrop-filter: blur();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+blockquote {
+    color: red;
+    font-weight: 400;
+}
+
+cite {
+    text-align: right;
+}
+
+section.four {
     max-width: 100%;
     height: 100vh;
     background: url(../img3_bg.jpg);
     background-attachment: fixed;
-    background-size: cover;
-    background-color: red;
 }
