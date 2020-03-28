@@ -9,9 +9,9 @@ body {
 
 .container {
     width: 100%;
-    align-items:center;
-    justify-content: center; 
-/* this is a comment reminding me to make more comments so you can follow my code. Really so I can remember what I did the day before*/
+    align-items: center;
+    justify-content: center;
+    /* this is a comment reminding me to make more comments so you can follow my code. Really so I can remember what I did the day before*/
 }
 
 div.wrapper {
@@ -44,8 +44,8 @@ nav {
     flex-wrap: nowrap;
     align-items: flex-end;
     writing-mode: vertical-rl;
-    padding-top:9em;
-    
+    padding-top: 9em;
+
 }
 
 a {
@@ -65,8 +65,8 @@ section.one {
     height: 100vh;
     background: url(../img1_bg.jpg);
     background-attachment: fixed;
-    background-size: contain;
-   
+    background-size: cover;
+
     background-color: red;
 }
 
@@ -90,6 +90,7 @@ section.two {
     /* border-right: 0.5em solid red; */
     margin-left: 4em;
 }
+
 div.bottomStack {
     width: 3.2em;
     height: 2.1em;
