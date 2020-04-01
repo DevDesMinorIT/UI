@@ -6,14 +6,16 @@
 }
 
 body {
+    /* width: 1424px; */
+    width: 100vw;
     max-width: 1424px;
-
 }
 
 .container {
     width: 100%;
     align-items: center;
     justify-content: center;
+
     /* this is a comment reminding me to make more comments so you can follow my code. Really so I can remember what I did the day before*/
 }
 
@@ -42,23 +44,27 @@ img.logo {
 }
 
 nav {
+    position: fixed;
+    top: 14.3em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-end;
     writing-mode: vertical-rl;
     padding-top: 9em;
+}
 
+.fab {
+    font-size: 0.7em;
 }
 
 a {
     display: inline;
     text-decoration: none;
-    padding-top: 9em;
+    /* padding-top: 9em; */
     color: #ff0200;
-    padding-left: 102.75em;
     margin-bottom: -5em;
-    margin-top: 4em;
+    margin-top: 7em;
     font-family: "Campaign";
     font-weight: 600;
     font-size: 0.85em;
@@ -66,14 +72,19 @@ a {
     text-transform: capitalize;
 }
 
+a:hover {
+    color: whitesmoke;
+    text-shadow: red;
+    background-color: red;
+}
+
 section.one {
     max-width: 100%;
-    height: 100vh;
+    height: 825px;
     background: url(../img1_bg.jpg);
     background-attachment: fixed;
     background-size: cover;
-
-    background-color: red;
+    background-color: white;
 }
 
 img.stamp {
@@ -84,55 +95,85 @@ img.stamp {
 
 section.two {
     max-width: 100%;
-    height: 100vh;
+    height: 825px;
     background: url(../img2_bg.jpg);
     background-color: white;
-    background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    border-left: 13em solid white;
-    border-top: 6.5em solid white;
-    border-bottom: 3.25em solid white;
-    /* border-right: 0.5em solid red; */
     margin-left: 4em;
 }
 
-div.bottomStack {
+div.floatright {
     position: absolute;
-    left: 3em;
-    margin-top: 2em;
-    width: 27.2em;
-    height: 34.1em;
-    background-color: red;
-    z-index: 0;
+    right: 9.2em;
+    top: 59.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.p {
+    text-align: center;
+    margin-right: 1.0em;
+    font-size: 3.5em;
+}
+
+p.font-size {
+    font-size: 2em;
+    text-align: center;
 }
 
 div.interiorImage {
-    height: 3.2em;
-    width: 2.1em;
-    background: url(../img6.jpg)
+    border-radius: 50%;
+    box-shadow: -1px 1px 21px 23px rgba(255, 2, 0, 0.87);
+    position: relative;
+    top: 9.5em;
+    right: -6em;
+    height: 37.2em;
+    width: 39.1em;
+    background: url(../img6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h2 {
     float: right;
-    background: whitesmoke;
+    background: white;
     color: red;
     font-size: 3em;
     font-family: "Campaign";
     font-weight: 200;
-    padding-right: 0.3em;
+    padding-right: 1.0em;
     margin-top: 0.53em;
+}
+
+span.red {
+    color: red;
+}
+
+input.callToAction {
+    padding: 0.3em 0.8em;
+    border: 1px solid #446d88;
+    background: #58a linear-gradient(#ff0200, #ffd8d5);
+    border-radius: 0.2em;
+    box-shadow: 0 0.05em 0.25em gray;
+    color: white;
+    font-family: 'Roboto';
+    text-shadow: 0 -0.05em 0.05em #335166;
+    font-size: 225%;
+    line-height: 1.5;
 }
 
 section.three {
     max-width: 100%;
-    height: 100vh;
+    height: 835px;
     background: url(../img4_bg.jpg);
     background-attachment: fixed;
     background-repeat: space;
     background-position: cover;
     background-color: white;
-    backdrop-filter: blur();
+    background: blur(1px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,6 +182,7 @@ section.three {
 
 blockquote {
     color: red;
+    background-color: white;
     font-weight: 400;
 }
 
@@ -148,9 +190,54 @@ cite {
     text-align: right;
 }
 
-section.four {
-    max-width: 100%;
-    height: 100vh;
-    background: url(../img3_bg.jpg);
-    background-attachment: fixed;
+div.social-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.75em;
+    background-color: red;
+    padding: 0.5em;
+    padding-top: 3px;
+}
+
+@media(max-width:700px) {
+    body {
+        width: 100%;
+    }
+
+    img.logo {
+        width: 23em;
+    }
+
+    img.stamp {
+        width: 33em
+    }
+
+    div.interiorImage {
+        right: 0;
+        display: none;
+    }
+
+    section.one {
+        background-image: none;
+
+    }
+
+    section.two {
+        background: url(../img5_bg.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-left: 0.5px;
+        margin-left: 0;
+    }
+
+    section.three {
+        background-repeat: repeat;
+    }
+
+    /* section.one {
+        width: 100%; */
+}
 }
